@@ -34,7 +34,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="17dp"
         android:fontFamily="@font/poppinssemibold"
-        android:textSize="13dp"
+        android:textSize="11dp"
+        android:textColor="@color/hitam"
         />
 
 
