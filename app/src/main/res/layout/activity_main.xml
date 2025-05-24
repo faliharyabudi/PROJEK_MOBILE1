@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -11,83 +11,76 @@
         android:id="@+id/img_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="1dp"
         android:layout_marginTop="0dp"
-        android:src="@drawable/gambar1" />
+        android:layout_marginStart="1dp"
+        android:src="@drawable/gambar1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/img_2"
         android:layout_width="190dp"
         android:layout_height="231dp"
-        android:layout_below="@+id/img_1"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="-32dp"
-        android:src="@drawable/li" />
+        android:src="@drawable/li"
+        app:layout_constraintTop_toBottomOf="@id/img_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+        android:id="@+id/txt_1"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/img_2"
-        android:text="Tingkatkan pemahamanmu lewat kuis seru dan edukatif!"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="17dp"
         android:fontFamily="@font/poppinssemibold"
-        android:textSize="13dp"
+        android:text="Tingkatkan pemahamanmu lewat kuis seru dan edukatif!"
         android:textColor="@color/hitam"
-        android:id="@+id/txt_1"/>
-
+        android:textSize="13sp"
+        app:layout_constraintTop_toBottomOf="@id/img_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/txt_2"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/txt_1"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/poppinsregular"
         android:gravity="center"
         android:padding="22dp"
-        android:text="Aplikasi kuis interaktif yang membantu kamu belajar secara mandiri.Latihan soal dari berbagai topik seperti Matematika, Fisika, Biologi, dan lainnya lengkap dengan penjelasan jawabannya.Belajar jadi lebih seru dan menyenangkan!"
-        android:textColor="@color/hitam" />
+        android:text="Aplikasi kuis interaktif yang membantu kamu belajar secara mandiri. Latihan soal dari berbagai topik seperti Matematika, Fisika, Biologi, dan lainnya lengkap dengan penjelasan jawabannya. Belajar jadi lebih seru dan menyenangkan!"
+        android:textColor="@color/hitam"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/txt_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txt_1"
-        android:layout_centerHorizontal="true"
-        android:width="300dp"
-        android:background="@drawable/button_shape"
-        android:text="Login"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="180dp"
-        android:textColor="color/white"
-        android:textSize="14dp"
-        android:fontFamily="@font/poppinsbold"
         android:id="@+id/btn1"
-        />
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/button_shape"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Login"
+        android:textColor="@color/putih"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/txt_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_marginTop="10dp"
+        android:id="@+id/btn_2"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txt_2"
-        android:layout_centerHorizontal="true"
-        android:width="300dp"
-        android:text="Register"
+        android:layout_marginTop="16dp"
         android:background="@drawable/button_shape"
-        android:text="Login"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="180dp"
-        android:textColor="color/white"
-        android:textSize="14dp"
         android:fontFamily="@font/poppinsbold"
-        android:id="@+id/btn_1"
-        />
+        android:text="Register"
+        android:textColor="@color/putih"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/btn1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
