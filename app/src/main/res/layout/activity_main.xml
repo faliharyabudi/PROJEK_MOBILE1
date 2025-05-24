@@ -52,6 +52,7 @@
 
     <Button
         android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/txt_1"
         android:layout_centerHorizontal="true"
@@ -62,7 +63,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="180dp"
-        android:textColor 
+        android:textColor="color/white"
+        android:textSize="14dp"
+        android:fontFamily="@font/poppinsbold"
+        android:id="@+id/btn1"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_2"
+        android:layout_centerHorizontal="true"
+        android:width="300dp"
+        android:text="Register"
+        android:background="@drawable/button_shape"
+        android:text="Login"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="180dp"
+        android:textColor="color/white"
+        android:textSize="14dp"
+        android:fontFamily="@font/poppinsbold"
+        android:id="@+id/btn_1"
+        />
 
 
 </RelativeLayout>
