@@ -36,7 +36,15 @@
         android:fontFamily="@font/poppinssemibold"
         android:textSize="11dp"
         android:textColor="@color/hitam"
+        android:id="@+id/txt_1"/>
         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_1"
+        android:text="Aplikasi kuis interaktif yang membantu kamu belajar secara mandiri.Latihan soal dari berbagai topik seperti Matematika, Fisika, Biologi, dan lainnya –lengkap dengan penjelasan jawabannya.Belajar jadi lebih seru dan menyenangkan!"
+        android:padding="20dp"
 
 
 </RelativeLayout>
