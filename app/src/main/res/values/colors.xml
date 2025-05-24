@@ -3,5 +3,7 @@
    <color name="warna1">#50C2C9</color>
     <color name="warna2">#55BBAF</color>
     <color name="hitam">#000000</color>
+    <color name="putih">#FFFFFF</color>
+    <color name="background">#EEEEEE</color>
 
 </resources>
