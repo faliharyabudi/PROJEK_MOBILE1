@@ -26,5 +26,4 @@ class LoginActivity2 : AppCompatActivity() {
             startActivity(Intent(this, MainActivity::class.java))
         }
     }
-
 }
