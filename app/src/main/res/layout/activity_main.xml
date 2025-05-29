@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             android:text="Uji Wawasanmu, Raih Skor Tertinggi!"
             android:textSize="16sp"
-            android:textColor="@color/hitam"
+            android:textColor="@color/hijau_toska"
             android:fontFamily="@font/poppinssemibold"
             android:gravity="center"
             android:layout_marginTop="16dp"

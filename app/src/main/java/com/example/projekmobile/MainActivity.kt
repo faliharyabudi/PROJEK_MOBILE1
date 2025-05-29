@@ -17,5 +17,11 @@ class MainActivity : AppCompatActivity() {
         binding.btn1.setOnClickListener {
             startActivity(Intent(this, LoginActivity2::class.java))
         }
+
+        binding.btn2.setOnClickListener {
+            startActivity(Intent(this, RegisterActivity::class.java))
+        }
+
+        supportActionBar?.hide()
     }
 }
