@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/putih"
+    android:background="@color/biru_dongker"
     tools:context=".MainActivity">
 
     <!-- Gambar Dekorasi -->
@@ -15,8 +15,6 @@
         android:layout_height="wrap_content"
         android:src="@drawable/gambar1"
         android:alpha="0.2"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -50,7 +48,7 @@
             android:layout_height="wrap_content"
             android:text="Uji Wawasanmu, Raih Skor Tertinggi!"
             android:textSize="16sp"
-            android:textColor="@color/hitam"
+            android:textColor="@color/putih"
             android:fontFamily="@font/poppinssemibold"
             android:gravity="center"
             android:layout_marginTop="16dp"
@@ -66,7 +64,7 @@
             android:text="Aplikasi kuis interaktif yang dirancang untuk membantu kamu belajar secara mandiri. Tersedia berbagai soal menarik dari Matematika, IPA, dan banyak lagi, lengkap dengan penjelasan jawaban. Yuk, belajar sambil bermain!"
             android:justificationMode="inter_word"
             android:textSize="12sp"
-            android:textColor="@color/hitam"
+            android:textColor="@color/putih"
             android:fontFamily="@font/poppinsregular"
             android:gravity="center"
             android:paddingStart="32dp"

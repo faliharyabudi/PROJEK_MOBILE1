@@ -23,5 +23,6 @@ class RegisterActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        supportActionBar?.hide()
     }
 }

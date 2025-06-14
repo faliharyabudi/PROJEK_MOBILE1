@@ -21,5 +21,7 @@ class MainActivity : AppCompatActivity() {
         binding.btn2.setOnClickListener {
             startActivity(Intent(this, RegisterActivity::class.java))
         }
+        supportActionBar?.hide()
+
     }
 }

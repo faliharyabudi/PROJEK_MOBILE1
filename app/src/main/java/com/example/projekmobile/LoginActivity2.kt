@@ -2,6 +2,7 @@ package com.example.projekmobile
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -19,8 +20,11 @@ class LoginActivity2 : AppCompatActivity() {
             insets
         }
 
+        supportActionBar?.hide()
+
         btnBackLoginListener()
         btnRegisterListener()
+        btnLoginListener() //
     }
 
     private fun btnBackLoginListener() {
@@ -35,6 +39,15 @@ class LoginActivity2 : AppCompatActivity() {
         txtLogin.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
+        }
+    }
+
+    private fun btnLoginListener() {
+        val btnLogin = findViewById<Button>(R.id.btn_login)
+        btnLogin.setOnClickListener {
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 }
