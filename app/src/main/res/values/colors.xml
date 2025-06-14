@@ -5,5 +5,11 @@
     <color name="hitam">#000000</color>
     <color name="putih">#FFFFFF</color>
     <color name="background">#EEEEEE</color>
+    <color name="biru_dongker">#002F6C</color>
+    <color name="biru_toska">#00ACC1</color>
+    <color name="biru">#BBDEFB</color>
+    <color name="biruu">#0D47A1</color>
+    <color name="hijau_toska">#3CC9E4</color>
+
 
 </resources>
