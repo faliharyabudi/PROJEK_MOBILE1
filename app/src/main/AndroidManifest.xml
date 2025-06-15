@@ -13,8 +13,11 @@
         android:theme="@style/Theme.PROJEKMOBILE"
         tools:targetApi="31">
         <activity
-            android:name=".Soal12Activity"
+            android:name=".Soal13Activity"
             android:exported="false" />
+        <activity
+            android:name=".Soal12Activity"
+            android:exported="true" />
         <activity
             android:name=".Soal11Activity"
             android:exported="true" />
