@@ -13,6 +13,9 @@
         android:theme="@style/Theme.PROJEKMOBILE"
         tools:targetApi="31">
         <activity
+            android:name=".Soal24Activity"
+            android:exported="true" />
+        <activity
             android:name=".Soal23Activity"
             android:exported="true" />
         <activity
