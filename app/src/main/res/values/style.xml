@@ -1,8 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.PROJEKMOBILE" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimary">@color/warna1</item>
-        <item name="colorAccent">@color/background</item>
-        <item name="colorOnSecondary">@color/putih</item>
+
+    <!-- Style bawaan Android, JANGAN dihapus -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- kustomisasi jika perlu -->
     </style>
+
+    <!-- Tambahkan style ini di bawahnya -->
+    <style name="MenuItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">14dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
 </resources>

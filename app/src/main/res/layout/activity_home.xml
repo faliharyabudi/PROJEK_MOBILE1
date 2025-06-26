@@ -38,6 +38,19 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         // Profile
+
+        <ImageView
+            android:id="@+id/img_back2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:clickable="true"
+            android:contentDescription="Back"
+            android:focusable="true"
+            android:src="@drawable/ic_back"
+            android:tint="@color/hijau_toska"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <ImageView
             android:id="@+id/img_profile"
             android:layout_width="30dp"
