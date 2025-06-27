@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/hijau_toska"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/txt_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yakin ingin meninggalkan permainan?"
+        android:textSize="16sp"
+        android:textColor="@color/biru_dongker"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_yakin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YAKIN"
+        android:textColor="@color/putih"
+        android:backgroundTint="@color/biru_toska" />
+</LinearLayout>
