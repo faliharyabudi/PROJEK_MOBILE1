@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.app.AlertDialog
 import android.widget.Button
 import androidx.core.content.ContextCompat
+import android.widget.Toast
+
 
 class Soal12Activity : AppCompatActivity() {
 
@@ -84,8 +86,15 @@ class Soal12Activity : AppCompatActivity() {
                 intent.putExtra("score", score)
                 startActivity(intent)
             } else {
+                //Menampilkan pesan toast kustom dengan layout custom_toast.xml
+                val layout = layoutInflater.inflate(R.layout.custom_toast, null)
 
+                val toast = Toast(applicationContext)
+                toast.duration = Toast.LENGTH_SHORT
+                toast.view = layout
+                toast.show()
             }
         }
+
     }
 }
