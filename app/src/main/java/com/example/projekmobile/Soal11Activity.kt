@@ -1,5 +1,6 @@
 package com.example.projekmobile
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
@@ -48,5 +49,22 @@ class Soal11Activity : AppCompatActivity() {
         btnB.setOnClickListener { handleJawabanDipilih(btnB, "B") }
         btnC.setOnClickListener { handleJawabanDipilih(btnC, "C") }
         btnD.setOnClickListener { handleJawabanDipilih(btnD, "D") }
+
+        // Tentukan jawaban benar
+        jawabanBenar = btnB
+
+        // Navigasi ke soal selanjutnya
+        arrowNext.setOnClickListener {
+            // Cek apakah jawaban dipilih dan cocok dengan jawaban benar
+            if (selectedButton == jawabanBenar) {
+                score += 20
+            }
+
+            // Kirim ke soal berikutnya
+            val intent = Intent(this, Soal12Activity::class.java)
+            intent.putExtra("score", score)
+            startActivity(intent)
+        }
+
     }
 }
