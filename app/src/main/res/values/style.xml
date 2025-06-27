@@ -1,11 +1,19 @@
 <resources>
 
-    <!-- Style bawaan Android, JANGAN dihapus -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- kustomisasi jika perlu -->
+    <style name="Theme.PROJEKMOBILE" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Sesuaikan warna tema jika perlu -->
+        <item name="colorPrimary">@color/hijau_toska</item>
+        <item name="colorPrimaryVariant">@color/hijau_toska</item>
+        <item name="colorOnPrimary">@color/putih</item>
+        <item name="colorSecondary">@color/biru_dongker</item>
+        <item name="android:statusBarColor">@color/biru_dongker</item>
     </style>
 
-    <!-- Tambahkan style ini di bawahnya -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+
+
     <style name="MenuItem">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
