@@ -14,6 +14,8 @@
         android:padding="24dp"
         android:gravity="center_horizontal">
 
+        <!-- Foto Profil -->
+
         <ImageView
             android:id="@+id/profile_image"
             android:layout_width="120dp"
@@ -24,6 +26,7 @@
             android:padding="4dp"
             android:layout_marginTop="24dp"/>
 
+        <!-- Nama -->
 
         <TextView
             android:id="@+id/profile_name"
@@ -35,6 +38,7 @@
             android:textColor="#FFFFFF"
             android:layout_marginTop="12dp" />
 
+        <!-- Email -->
         <TextView
             android:id="@+id/profile_email"
             android:layout_width="wrap_content"
@@ -44,6 +48,7 @@
             android:textColor="#DDDDDD"
             android:layout_marginTop="2dp" />
 
+        <!-- Tombol Edit -->
         <Button
             android:id="@+id/btn_edit"
             android:layout_width="wrap_content"
@@ -53,6 +58,7 @@
             android:textColor="@android:color/white"
             android:layout_marginTop="16dp" />
 
+        <!-- Statistik -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -101,6 +107,7 @@
             </LinearLayout>
         </LinearLayout>
 
+        <!-- Menu Tambahan -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -115,6 +122,10 @@
                 style="@style/MenuItem"
                 android:text=" Riwayat Aktivitas" />
 
+            <TextView
+                android:id="@+id/menu_settings"
+                style="@style/MenuItem"
+                android:text="️ Pengaturan Akun" />
 
         </LinearLayout>
     </LinearLayout>
