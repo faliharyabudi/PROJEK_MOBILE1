@@ -110,6 +110,11 @@
             android:elevation="3dp"
             android:padding="8dp">
 
+            <TextView
+                android:id="@+id/menu_history"
+                style="@style/MenuItem"
+                android:text=" Riwayat Aktivitas" />
+
 
         </LinearLayout>
     </LinearLayout>
