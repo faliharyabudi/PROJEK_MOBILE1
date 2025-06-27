@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import android.content.Intent
 import android.widget.ImageView
+import android.widget.Toast
 
 class Soal13Activity : AppCompatActivity() {
 
@@ -55,6 +56,13 @@ class Soal13Activity : AppCompatActivity() {
                 val intent = Intent(this, Soal14Activity::class.java)
                 intent.putExtra("score", score)
                 startActivity(intent)
+            } else {
+                // Toast jika belum memilih jawaban
+                val layout = layoutInflater.inflate(R.layout.custom_toast, null)
+                val toast = Toast(applicationContext)
+                toast.duration = Toast.LENGTH_SHORT
+                toast.view = layout
+                toast.show()
             }
         }
     }
