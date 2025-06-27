@@ -23,15 +23,16 @@ class HomeActivity : AppCompatActivity() {
         }
 
         supportActionBar?.hide()
+        val btnBack = findViewById<ImageView>(R.id.img_back)
 
-        // tombol back ke MainActivity
-        val imgBack = findViewById<ImageView>(R.id.img_back)
-        imgBack.setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
+        //navigasi tombol back
+        btnBack.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
             finish()
         }
 
-        // tombol masuk ke Soal11Activity
+        // navigasi button level 1
         val btnLevel1 = findViewById<RelativeLayout>(R.id.btn_lvl1)
         btnLevel1.setOnClickListener {
             val intent = Intent(this, Soal11Activity::class.java)
