@@ -1,3 +1,4 @@
+
 package com.example.projekmobile
 
 import android.content.Intent
@@ -31,10 +32,12 @@ class HomeActivity : AppCompatActivity() {
         }
 
         // tombol masuk ke Soal11Activity
-        val btnLevel1 = findViewById<RelativeLayout>(R.id.btn_a24)
+        val btnLevel1 = findViewById<RelativeLayout>(R.id.btn_lvl1)
         btnLevel1.setOnClickListener {
             val intent = Intent(this, Soal11Activity::class.java)
             startActivity(intent)
         }
     }
 }
+
+
