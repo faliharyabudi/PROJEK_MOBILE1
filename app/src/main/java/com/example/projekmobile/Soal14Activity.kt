@@ -46,5 +46,21 @@ class Soal14Activity : AppCompatActivity() {
         btnB.setOnClickListener { handleJawabanDipilih(btnB, "B") }
         btnC.setOnClickListener { handleJawabanDipilih(btnC, "C") }
         btnD.setOnClickListener { handleJawabanDipilih(btnD, "D") }
+
+        // Logika score
+        val jawabanBenar = "A"
+        var score = intent.getIntExtra("score", 0)
+        val arrowNext = findViewById<ImageView>(R.id.arrow_lvl1)
+
+        arrowNext.setOnClickListener {
+            if (selectedAnswer != null) {
+                if (selectedAnswer == jawabanBenar) {
+                    score += 20
+                }
+                val intent = Intent(this, Soal15Activity::class.java)
+                intent.putExtra("score", score)
+                startActivity(intent)
+            }
+        }
     }
 }
