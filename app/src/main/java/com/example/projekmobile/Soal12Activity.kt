@@ -1,21 +1,37 @@
 package com.example.projekmobile
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import android.app.AlertDialog
+import android.widget.Button
 
 class Soal12Activity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_soal12)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        val btnBack = findViewById<ImageView>(R.id.img_back)
+
+        // Navigasi tombol back
+        btnBack.setOnClickListener {
+            val dialogView = layoutInflater.inflate(R.layout.dialog_exit, null)
+            val dialog = AlertDialog.Builder(this)
+                .setView(dialogView)
+                .setCancelable(true)
+                .create()
+
+            val btnYakin = dialogView.findViewById<Button>(R.id.btn_yakin)
+            btnYakin.setOnClickListener {
+                val intent = Intent(this, HomeActivity::class.java)
+                intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+                startActivity(intent)
+                finish()
+            }
+
+            dialog.show()
         }
-        supportActionBar?.hide()
     }
 }
