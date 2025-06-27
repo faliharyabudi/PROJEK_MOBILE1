@@ -60,7 +60,14 @@ class Soal14Activity : AppCompatActivity() {
                 val intent = Intent(this, Soal15Activity::class.java)
                 intent.putExtra("score", score)
                 startActivity(intent)
+            } else {
+                val layout = layoutInflater.inflate(R.layout.custom_toast, null)
+                val toast = Toast(applicationContext)
+                toast.duration = Toast.LENGTH_SHORT
+                toast.view = layout
+                toast.show()
             }
         }
+
     }
 }
