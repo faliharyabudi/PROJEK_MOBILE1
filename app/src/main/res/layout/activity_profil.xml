@@ -132,6 +132,11 @@
                 style="@style/MenuItem"
                 android:text=" Pusat Bantuan" />
 
+            <TextView
+                android:id="@+id/menu_about"
+                style="@style/MenuItem"
+                android:text=" Tentang Aplikasi" />
+
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
