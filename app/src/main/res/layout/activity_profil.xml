@@ -20,16 +20,13 @@
             android:id="@+id/profile_image"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:src="@drawable/ic_user"
+            android:src="@drawable/profile"
             android:scaleType="centerCrop"
             android:background="@drawable/circle_white"
             android:padding="4dp"
             android:layout_marginTop="24dp"/>
 
         <!-- Nama -->
-
-        <ImageView
-
 
         <TextView
             android:id="@+id/profile_name"
