@@ -81,6 +81,26 @@
                     android:textColor="#222222" />
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:text="Poin"
+                    android:textSize="14sp"
+                    android:textColor="#777777" />
+
+                <TextView
+                    android:text="5400"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#222222" />
+            </LinearLayout>
+        </LinearLayout>
+
 
 
         </LinearLayout>
