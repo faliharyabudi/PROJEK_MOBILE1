@@ -6,6 +6,7 @@ import android.widget.Button
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import android.widget.Toast
 
 class Soal11Activity : AppCompatActivity() {
 
@@ -55,15 +56,23 @@ class Soal11Activity : AppCompatActivity() {
 
         // Navigasi ke soal selanjutnya
         arrowNext.setOnClickListener {
-            // Cek apakah jawaban dipilih dan cocok dengan jawaban benar
-            if (selectedButton == jawabanBenar) {
-                score += 20
-            }
+            if (selectedAnswer != null) {
+                if (selectedButton == jawabanBenar) {
+                    score += 20
+                }
 
-            // Kirim ke soal berikutnya
-            val intent = Intent(this, Soal12Activity::class.java)
-            intent.putExtra("score", score)
-            startActivity(intent)
+                // Kirim ke soal berikutnya
+                val intent = Intent(this, Soal12Activity::class.java)
+                intent.putExtra("score", score)
+                startActivity(intent)
+            } else {
+                // Tampilkan toast jika belum memilih jawaban
+                val layout = layoutInflater.inflate(R.layout.custom_toast, null)
+                val toast = Toast(applicationContext)
+                toast.duration = Toast.LENGTH_SHORT
+                toast.view = layout
+                toast.show()
+            }
         }
 
         // Navigasi Tombol Back
