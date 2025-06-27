@@ -63,6 +63,29 @@ class Soal12Activity : AppCompatActivity() {
         btnC.setOnClickListener { handleJawabanDipilih(btnC, "C") }
         btnD.setOnClickListener { handleJawabanDipilih(btnD, "D") }
 
+        //Navigasi ke soal selanjutnya
+        val arrowNext = findViewById<ImageView>(R.id.arrow_lvl1)
 
+        // Skor awal yang dibawa dari soal sebelumnya
+        var score = intent.getIntExtra("score", 0)
+
+        // Jawaban benar soal 12 adalah "D"
+        val jawabanBenar = "D"
+
+        // Navigasi ke soal 13
+        arrowNext.setOnClickListener {
+            // Cek apakah jawaban sudah dipilih
+            if (selectedAnswer != null) {
+                if (selectedAnswer == jawabanBenar) {
+                    score += 20
+                }
+
+                val intent = Intent(this, Soal13Activity::class.java)
+                intent.putExtra("score", score)
+                startActivity(intent)
+            } else {
+
+            }
+        }
     }
 }
