@@ -137,6 +137,11 @@
                 style="@style/MenuItem"
                 android:text=" Tentang Aplikasi" />
 
+            <TextView
+                android:id="@+id/menu_policy"
+                style="@style/MenuItem"
+                android:text=" Kebijakan Privasi" />
+
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
