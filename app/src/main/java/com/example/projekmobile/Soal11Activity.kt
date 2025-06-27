@@ -66,5 +66,25 @@ class Soal11Activity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        // Navigasi Tombol Back
+        btnBack.setOnClickListener {
+            val dialogView = layoutInflater.inflate(R.layout.dialog_exit, null)
+            val dialog = android.app.AlertDialog.Builder(this)
+                .setView(dialogView)
+                .setCancelable(true)
+                .create()
+
+            val btnYakin = dialogView.findViewById<Button>(R.id.btn_yakin)
+            btnYakin.setOnClickListener {
+                val intent = Intent(this, HomeActivity::class.java)
+                intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+                startActivity(intent)
+                finish()
+            }
+
+            // Tampilkan dialog di tengah
+            dialog.show()
+        }
+
     }
 }
