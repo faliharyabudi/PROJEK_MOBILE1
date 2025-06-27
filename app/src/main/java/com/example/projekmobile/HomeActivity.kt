@@ -1,4 +1,3 @@
-
 package com.example.projekmobile
 
 import android.content.Intent
@@ -25,20 +24,32 @@ class HomeActivity : AppCompatActivity() {
         supportActionBar?.hide()
         val btnBack = findViewById<ImageView>(R.id.img_back)
 
-        //navigasi tombol back
+        // navigasi tombol back
         btnBack.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
         }
 
-        // navigasi button level 1
+        // navigasi tombol LEVEL 1 ke Soal11Activity
         val btnLevel1 = findViewById<RelativeLayout>(R.id.btn_lvl1)
         btnLevel1.setOnClickListener {
             val intent = Intent(this, Soal11Activity::class.java)
             startActivity(intent)
         }
+
+        // navigasi tombol LEVEL 2 ke Soal21Activity
+        val btnLevel2 = findViewById<RelativeLayout>(R.id.btn_lvl2)
+        btnLevel2.setOnClickListener {
+            val intent = Intent(this, Soal21Activity::class.java)
+            startActivity(intent)
+        }
+
+        // navigasi tombol LEVEL 3 ke Soal31Activity
+        val btnLevel3 = findViewById<RelativeLayout>(R.id.btn_lvl3)
+        btnLevel3.setOnClickListener {
+            val intent = Intent(this, Soal31Activity::class.java)
+            startActivity(intent)
+        }
     }
 }
-
-
