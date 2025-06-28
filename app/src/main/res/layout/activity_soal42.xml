@@ -53,4 +53,28 @@
         app:layout_constraintStart_toEndOf="@id/icon_medal"
         app:layout_constraintTop_toTopOf="@id/icon_medal" />
 
+    <ImageView
+        android:id="@+id/arrow_lvl1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/arrow"
+        android:tint="#FBC02D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_soal42"
+        android:layout_width="335dp"
+        android:layout_height="157dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/soal42"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon_medal" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
