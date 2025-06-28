@@ -31,4 +31,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/icon_medal"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/medal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_back" />
+
+    <TextView
+        android:id="@+id/txt_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsbold"
+        android:text="LEVEL 4"
+        android:textColor="@color/putih"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/icon_medal"
+        app:layout_constraintStart_toEndOf="@id/icon_medal"
+        app:layout_constraintTop_toTopOf="@id/icon_medal" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
