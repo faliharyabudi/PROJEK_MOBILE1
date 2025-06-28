@@ -123,7 +123,7 @@
         android:backgroundTint="@color/biru"
         android:text="Massa benda besar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintHorizontal_bias="0.567"
         app:layout_constraintStart_toEndOf="@+id/btn_a41"
         tools:layout_editor_absoluteY="385dp" />
 
@@ -138,5 +138,17 @@
         android:text="Gaya tarik lebih kuat"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_a41" />
+
+    <Button
+        android:id="@+id/btn_d41"
+        android:layout_width="179dp"
+        android:layout_height="54dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/biru"
+        android:text="Volume benda lebih kecil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toEndOf="@+id/btn_b41"
+        tools:layout_editor_absoluteY="459dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
