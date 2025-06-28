@@ -5,4 +5,11 @@
     android:background="@color/biru_dongker"
     android:padding="24dp">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
 </RelativeLayout>
