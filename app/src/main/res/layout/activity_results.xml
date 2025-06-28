@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/biru_dongker"
     android:padding="24dp">
+
+    <ImageView
+        android:id="@+id/img_login"
+        android:layout_width="65dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="login"
+        android:src="@drawable/login" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -56,108 +66,6 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="40dp"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="12dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:text="Kategori"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:layout_width="20dp"
-                    android:layout_height="wrap_content"
-                    android:text=": "
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/tv_category_name"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Kategori Quiz"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="12dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:text="Skor terbaik"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:layout_width="20dp"
-                    android:layout_height="wrap_content"
-                    android:text=": "
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/tv_best_score"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="0"
-                    android:textColor="@color/orange"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:text="Ranking"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:layout_width="20dp"
-                    android:layout_height="wrap_content"
-                    android:text=": "
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/tv_ranking"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="0"
-                    android:textColor="#4CAF50"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
         <!-- Action Buttons -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -171,7 +79,7 @@
                 android:layout_height="56dp"
                 android:layout_weight="1"
                 android:layout_marginEnd="8dp"
-                android:text="Peringkat"
+                android:text="Kembali"
                 android:textColor="@color/orange"
                 android:textSize="16sp"
                 android:textStyle="bold" />

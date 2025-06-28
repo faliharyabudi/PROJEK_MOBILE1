@@ -1,17 +1,6 @@
 <resources>
 
-    <style name="Theme.PROJEKMOBILE" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <!-- Sesuaikan warna tema jika perlu -->
-        <item name="colorPrimary">@color/hijau_toska</item>
-        <item name="colorPrimaryVariant">@color/hijau_toska</item>
-        <item name="colorOnPrimary">@color/putih</item>
-        <item name="colorSecondary">@color/biru_dongker</item>
-        <item name="android:statusBarColor">@color/biru_dongker</item>
-    </style>
 
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-
-    </style>
 
 
     <style name="MenuItem">

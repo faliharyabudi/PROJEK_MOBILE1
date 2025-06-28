@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/biru_dongker">
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="Back"
+        android:src="@drawable/ic_back"
+        android:tint="@color/hijau_toska"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_login"
+        android:layout_width="65dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="login"
+        android:src="@drawable/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/icon_medal"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/medal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_back" />
+
+    <TextView
+        android:id="@+id/txt_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsbold"
+        android:text="LEVEL 4"
+        android:textColor="@color/putih"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/icon_medal"
+        app:layout_constraintStart_toEndOf="@id/icon_medal"
+        app:layout_constraintTop_toTopOf="@id/icon_medal" />
+
+    <ImageView
+        android:id="@+id/arrow_lvl1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/arrow"
+        android:tint="#FBC02D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_soal41"
+        android:layout_width="335dp"
+        android:layout_height="157dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/soal41"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon_medal" />
+
+    <RelativeLayout
+        android:id="@+id/btn_soal41"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/biru"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_soal41">
+
+        <TextView
+            android:id="@+id/txt_mtri41"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsregular"
+            android:justificationMode="inter_word"
+            android:text="1. Benda akan mengapung jika..."
+            android:textColor="@color/hitam"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_a41"
+        android:layout_width="179dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/biru"
+        android:text="Massa jenis benda lebih kecil dari zat cair"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_soal41" />
+
+    <Button
+        android:id="@+id/btn_c41"
+        android:layout_width="179dp"
+        android:layout_height="54dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/biru"
+        android:text="Massa benda besar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toEndOf="@+id/btn_a41"
+        tools:layout_editor_absoluteY="385dp" />
+
+    <Button
+        android:id="@+id/btn_b41"
+        android:layout_width="179dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/biru"
+        android:text="Gaya tarik lebih kuat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_a41" />
+
+    <Button
+        android:id="@+id/btn_d41"
+        android:layout_width="179dp"
+        android:layout_height="54dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/biru"
+        android:text="Volume benda lebih kecil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toEndOf="@+id/btn_b41"
+        tools:layout_editor_absoluteY="459dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
