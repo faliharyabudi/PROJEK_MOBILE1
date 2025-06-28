@@ -5,8 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Soal42Activity"
-    android:background="@color/biru_dongker">
+    android:background="@color/biru_dongker"
+    tools:context=".Soal42Activity">
 
     <ImageView
         android:id="@+id/img_back"
@@ -102,5 +102,51 @@
             android:textSize="14sp" />
 
     </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_a42"
+        android:layout_width="179dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/biru"
+        android:text="Respirasi"
+        app:layout_constraintTop_toBottomOf="@+id/btn_soal42"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/btn_c42"
+        android:layout_width="179dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/biru"
+        android:text="Fermentasi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_a42"
+        tools:layout_editor_absoluteY="384dp" />
+
+    <Button
+        android:id="@+id/btn_b42"
+        android:layout_width="179dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/biru"
+        android:text="Fotosintesis"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_a42" />
+
+    <Button
+        android:id="@+id/btn_d41"
+        android:layout_width="179dp"
+        android:layout_height="54dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/biru"
+        android:text="Evaporasi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_b42"
+        tools:layout_editor_absoluteY="459dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
