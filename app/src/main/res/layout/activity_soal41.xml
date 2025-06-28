@@ -78,7 +78,7 @@
         app:layout_constraintTop_toBottomOf="@id/icon_medal" />
 
     <RelativeLayout
-        android:id="@+id/btn_soal24"
+        android:id="@+id/btn_soal41"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -92,7 +92,7 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <TextView
-            android:id="@+id/txt_mtri24"
+            android:id="@+id/txt_mtri41"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="1. Benda akan mengapung jika..."
