@@ -53,4 +53,15 @@
         app:layout_constraintTop_toTopOf="@id/icon_medal"
         app:layout_constraintBottom_toBottomOf="@id/icon_medal" />
 
+    <ImageView
+        android:id="@+id/arrow_lvl1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/arrow"
+        android:tint="#FBC02D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
