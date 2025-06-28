@@ -103,5 +103,55 @@
 
     </RelativeLayout>
 
+    <Button
+        android:id="@+id/btn_a43"
+        android:layout_width="179dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/biru"
+        android:text="120 cm²"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_soal43" />
+
+    <Button
+        android:id="@+id/btn_c42"
+        android:layout_width="179dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/biru"
+        android:text="124 cm²"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toEndOf="@+id/btn_a43"
+        tools:layout_editor_absoluteY="430dp" />
+
+    <Button
+        android:id="@+id/btn_b42"
+        android:layout_width="179dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/biru"
+        android:text="144 cm²"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_a43" />
+
+    <Button
+        android:id="@+id/btn_d42"
+        android:layout_width="179dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/biru"
+        android:text="156 cm²"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toEndOf="@+id/btn_b43"
+        tools:layout_editor_absoluteY="504dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
