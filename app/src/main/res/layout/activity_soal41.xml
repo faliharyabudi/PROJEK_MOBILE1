@@ -104,7 +104,7 @@
     </RelativeLayout>
 
     <Button
-        android:id="@+id/btn_a24"
+        android:id="@+id/btn_a41"
         android:layout_width="179dp"
         android:layout_height="54dp"
         android:layout_marginStart="16dp"
@@ -116,7 +116,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_soal41" />
 
     <Button
-        android:id="@+id/btn_a24"
+        android:id="@+id/btn_c41"
         android:layout_width="179dp"
         android:layout_height="54dp"
         android:background="@drawable/button_shape"
@@ -124,7 +124,19 @@
         android:text="Massa benda besar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.941"
-        app:layout_constraintStart_toEndOf="@+id/btn_a24"
+        app:layout_constraintStart_toEndOf="@+id/btn_a41"
         tools:layout_editor_absoluteY="385dp" />
+
+    <Button
+        android:id="@+id/btn_b41"
+        android:layout_width="179dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/biru"
+        android:text="Gaya tarik lebih kuat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_a41" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
