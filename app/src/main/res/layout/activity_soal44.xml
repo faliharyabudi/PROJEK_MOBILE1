@@ -124,9 +124,9 @@
         android:backgroundTint="@color/biru"
         android:text="Ditiup"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintHorizontal_bias="0.393"
         app:layout_constraintStart_toEndOf="@+id/btn_a44"
-        tools:layout_editor_absoluteY="430dp" />
+        tools:layout_editor_absoluteY="450dp" />
 
     <Button
         android:id="@+id/btn_b44"
@@ -151,7 +151,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/btn_b44"
-        tools:layout_editor_absoluteY="504dp" />
+        tools:layout_editor_absoluteY="524dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
