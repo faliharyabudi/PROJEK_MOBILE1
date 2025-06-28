@@ -97,7 +97,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppinsregular"
             android:justificationMode="inter_word"
-            android:text="3. Luas persegi dengan sisi 12 cm adalah..."
+            android:text="4. Alat musik angklung dimainkan dengan cara..."
             android:textColor="@color/hitam"
             android:textSize="14sp" />
 
