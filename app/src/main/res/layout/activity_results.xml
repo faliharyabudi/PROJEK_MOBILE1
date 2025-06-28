@@ -67,7 +67,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
-                android:text="Kategori"
+                android:text="Kategori : "
+                android:textColor="@color/putih"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_category_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kategori Quiz"
                 android:textColor="@color/putih"
                 android:textSize="16sp" />
 
