@@ -14,17 +14,9 @@
         android:padding="16dp">
 
         // Botton Logo
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="205dp"
-            android:layout_height="162dp"
-            app:srcCompat="@drawable/login"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="577dp" />
 
         // Botton Back
+
         <ImageView
             android:id="@+id/img_back"
             android:layout_width="24dp"
@@ -140,20 +132,26 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         // Botton Level 1
+
+        // Botton Level 2
+
+        // Botton Level 3
+
         <RelativeLayout
             android:id="@+id/btn_lvl1"
             android:layout_width="0dp"
             android:layout_height="76dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="12dp"
             android:background="@drawable/button_shape"
             android:backgroundTint="#2196F3"
             android:clickable="true"
             android:focusable="true"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
-            app:layout_constraintTop_toBottomOf="@id/txt_levels"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
+            app:layout_constraintTop_toBottomOf="@id/txt_levels">
 
             <!-- ICON MEDAL -->
             <ImageView
@@ -169,9 +167,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_toEndOf="@id/icon_medal"
                 android:layout_marginStart="32dp"
                 android:layout_toStartOf="@id/arrow_lvl1"
+                android:layout_toEndOf="@id/icon_medal"
                 android:fontFamily="@font/poppinsbold"
                 android:text="LEVEL 1"
                 android:textColor="@color/putih"
@@ -184,10 +182,9 @@
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:src="@drawable/arrow"
-                android:tint="#FBC02D"/>
+                android:tint="#FBC02D" />
         </RelativeLayout>
 
-        // Botton Level 2
         <RelativeLayout
             android:id="@+id/btn_lvl2"
             android:layout_width="0dp"
@@ -199,9 +196,10 @@
             android:focusable="true"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
-            app:layout_constraintTop_toBottomOf="@id/btn_lvl1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
+            app:layout_constraintTop_toBottomOf="@id/btn_lvl1">
 
             <ImageView
                 android:id="@+id/icon_lvl2"
@@ -216,12 +214,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_toEndOf="@id/icon_lvl2"
                 android:layout_marginStart="32dp"
+                android:layout_toEndOf="@id/icon_lvl2"
                 android:fontFamily="@font/poppinsbold"
                 android:text="LEVEL 2"
                 android:textColor="@color/putih"
-                android:textSize="16sp" >
+                android:textSize="16sp">
 
             </TextView>
 
@@ -235,7 +233,6 @@
                 android:tint="#FBC02D" />
         </RelativeLayout>
 
-        // Botton Level 3
         <RelativeLayout
             android:id="@+id/btn_lvl3"
             android:layout_width="0dp"
@@ -281,6 +278,104 @@
                 android:layout_centerVertical="true"
                 android:src="@drawable/arrow"
                 android:tint="#FBC02D"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_lvl4"
+            android:layout_width="0dp"
+            android:layout_height="76dp"
+            android:layout_marginTop="108dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/biru_toska"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_lvl2">
+
+            <ImageView
+                android:id="@+id/icon_lvl3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/medal" />
+
+            <TextView
+                android:id="@+id/text_lvl3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="32dp"
+                android:layout_toEndOf="@id/icon_lvl3"
+                android:fontFamily="@font/poppinsbold"
+                android:text="LEVEL 4"
+                android:textColor="@color/putih"
+                android:textSize="16sp">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/arrow_lvl3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow"
+                android:tint="#FBC02D" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_lvl4"
+            android:layout_width="0dp"
+            android:layout_height="76dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/biru_toska"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_lvl2">
+
+            <ImageView
+                android:id="@+id/icon_lvl3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/medal" />
+
+            <TextView
+                android:id="@+id/text_lvl3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="32dp"
+                android:layout_toEndOf="@id/icon_lvl3"
+                android:fontFamily="@font/poppinsbold"
+                android:text="LEVEL 4"
+                android:textColor="@color/putih"
+                android:textSize="16sp">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/arrow_lvl3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow"
+                android:tint="#FBC02D" />
 
         </RelativeLayout>
 
